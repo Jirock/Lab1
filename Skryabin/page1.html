@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/style.css">
+    <title>Лайт версия</title>
+</head>
+<body>
+    <div class="container" style="justify-content: center;">
+    <!-- Таблица, организующая расположение фигур и кнопок -->
+    <table>
+        <tr>
+            <!-- Здесь отображается текущее значение счётчика -->
+            <td><h1 class="counter">0</h1></td>
+            
+            <!-- Ячейка с первой фигурой (изменяемый размер) -->
+            <!-- shape1 – размер меняется кнопкой "Увеличение размера" -->
+            <td><div class="shape shape1"></div></td>
+            
+            <!-- Ячейка, содержащая две фигуры (обмен цветами) -->
+            <td>
+                <div class="shape shape2"></div>     <!-- shape2 – цвет меняется при обмене -->
+                <div class="shape shape3" style="background-color: rgb(255, 0, 0);"></div> <!-- shape3 – изначально красный -->
+            </td>
+            
+            <!-- Ячейка с фигурой для наведения мыши -->
+            <!-- shape4 – меняет цвет при наведении -->
+            <td><div class="shape shape4"></div></td>
+            
+            <!-- Ячейка с фигурой для двойного клика -->
+            <!-- shape5 – скругление углов при обычном клике возврат при двойном -->
+            <td><div class="shape shape5"></div></td>
+        </tr>
+        
+        <!-- Кнопки управления -->
+        <tr>
+            <td><button class="btn-counter" id="movement">Кликни!</button></td> <!-- Увеличивает счётчик -->
+            <td><button class="btn-increase" id="movement">Увеличение размера</button></td> <!-- Увеличивает/сбрасывает размер shape1 -->
+            <td><button class="btn-change-color" id="movement">Поменять цвета</button></td> <!-- Меняет цвета shape2 и shape3 -->
+            <td><h4>Наведение</h4></td>
+            <td><button class="btn-double" id="movement">Двойной клик!</button></td> <!-- Скругляет углы shape5 -->
+            <!-- Ячейка с двумя кнопками, расположенными вертикально (flex-колонка) -->
+            <td style="display: flex; flex-direction: column;">
+                <button class="btn-add-img" id="movement">Добавить фото</button> <!-- Устанавливает фоновое изображение -->
+                <button class="btn-remove-img" id="movement">Убрать фото</button> <!-- Убирает фоновое изображение -->
+            </td>
+            <td><button class="btn-title" id="movement">Изменить заголовок страницы</button></td> <!-- Меняет текст в теге <title> -->
+        </tr>
+    </table>
+</div>
+
+<!-- Подключение JavaScript-файла с логикой обработки событий -->
+<script src="resources/main-p1.js"></script>
+</body>
+</html>

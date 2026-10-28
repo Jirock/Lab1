@@ -1,0 +1,107 @@
+@import url('https://fonts-online.ru/fonts/montserrat');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: 24;
+    color: #f0f0f0;
+}
+
+h1, h2, h3, h4, h5 p {
+    color: #f0f0f0;
+}
+
+
+body {
+    margin: 0;
+    padding : 0;
+    text-decoration: none;
+    font-size: 24;
+    background-color: #201E1F;
+    width: 100%;
+    height: 100vh;
+    border-bottom: rgb(19, 116, 7) 2px solid;
+    border-top: rgb(19, 116, 7) 2px solid;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main {
+    height: 75%; width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main img {
+    height: 400px;
+}
+
+.buttons {
+    width: 100%; height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#movement {
+    background-color: transparent;
+    border: 2px solid rgb(202, 15, 8);
+}
+
+#movement:active {
+    background-color: rgb(255, 0, 0);
+}
+
+button {
+    background-color: rgb(19, 116, 7);
+    border: 0px;
+    color: #f0f0f0;
+    width: 150px; height: 55px;
+    
+    transition: all 0.2s ease;
+}
+
+button:active {
+    background-color: rgb(33, 206, 10);
+}
+
+.link_to_page {
+    width: 350px; height: 350px;
+    border: 2px solid rgb(19, 116, 7);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+td {
+    text-align: center;
+}
+
+td div, td h1, td p {
+  display: inline-block;
+}
+
+.shape {
+    width: 50px; height: 50px;
+    background-color: rgb(19, 116, 7);
+}

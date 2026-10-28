@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/style.css">
+    <title>Chara run</title>
+</head>
+<body>
+     <!-- Блок для пасхалки – изначально скрыт, появляется при особых условиях -->
+    <div class="easter_egg"></div>
+
+    <!-- Основной контейнер, ширина 100% от родителя -->
+    <div class="container" style="width: 100%;">
+        <h1>ОБРАБОТКА СОБЫТИЙ</h1>
+
+        <!-- Блок с центральным изображением -->
+        <div class="main">
+            <img class="content_img" src="resources/img/Charger_stopped.png">
+        </div>
+
+        <!-- Панель с кнопками управления -->
+        <div class="buttons">
+            <!-- Первая группа кнопок (красная зона) -->
+            <div class="red_area">
+                <button class="btn-move" id="movement">Движение</button>
+                <button class="btn-stop" id="movement">Остановить</button>
+                <button class="btn-reset" id="movement">Перезагрузка</button>
+            </div>
+
+            <!-- Вторая группа кнопок (зелёная зона) -->
+            <div class="green_area">
+                <button class="btn-wide">Широкий</button>
+                <button class="btn-tiny">Кроха</button>
+                <button class="btn-old-size">Прежний размер</button>
+                <button class="btn-moving">Прогулка</button>
+                <button class="btn-hover">Режим наведения</button>
+            </div>
+
+            <!-- Третья группа кнопок (жёлтая зона) -->
+            <div class="yellow_area">
+                <button class="btn-cloning">Клонирование</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключение скрипта с основной логикой -->
+    <script src="resources/main-p2.js"></script>
+</body>
+</html>
